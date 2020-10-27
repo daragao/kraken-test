@@ -1,0 +1,8 @@
+services:
+  kraken_deposits:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: kraken
+    container_name: krakenRunAll
+    command: npm --silent start
